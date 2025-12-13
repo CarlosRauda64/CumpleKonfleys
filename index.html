@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carta de Cumpleaños</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--
+        CARD STACK
+        Las secciones siguientes forman la "carta". Cada <section> contiene una tarjeta (.card).
+        - Para añadir una nueva tarjeta: copiar una <section> completa y poner id único.
+        - Para una tarjeta solo-imagen, usa el ejemplo 'gallery' más abajo.
+        - Cada sección se mostrará con una animación de deslizamiento al avanzar.
+    -->
+    <main id="card-stack" class="card-stack">
+        <section id="intro">
+            <div class="card dark">
+                <h1 style="font-size: 3rem; margin-bottom: 10px; line-height: 1.1;">TU CARTA<br><span
+                        style="color: var(--accent-green);">DE CUMPLEAÑOS</span></h1>
+                <p class="sub animate-delay-1">Es un pequeño gesto como Devs 😉 ¿Tas listo?</p>
+                <div class="heart-icon animate-delay-2" style="font-size: 3rem;">🎉</div>
+                <p class="animate-delay-3" style="margin-top: 30px; font-size: 0.9rem; opacity: 0.6;">Haz click en la
+                    tarjeta para avanzar</p>
+            </div>
+        </section>
+
+        <section id="top-moments">
+            <div class="card light">
+                <h3 class="brand">LO QUE SE VINO ESTE AÑO</h3>
+                <div class="plant-icon animate-delay-1">✨</div>
+                <h2 class="main-title animate-delay-1">ESTE AÑO ESTUVO LLENO DE LOGROS</h2>
+
+                <div class="animate-delay-2" style="text-align: left; margin-top: 30px;">
+                    <div class="list-item">
+                        <span><span class="list-icon">💼</span>Conseguiste tu segunda chamba 🤣</span>
+                    </div>
+                    <div class="list-item">
+                        <span><span class="list-icon">🎯</span>Te endeudaste con una refrigeradora jajajaja 🤣</span>
+                    </div>
+                    <div class="list-item">
+                        <span><span class="list-icon">🙏</span>Bueno te diria tambien que pasar la Uni pero en Línea es muy fácil 🤣</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="top-song">
+            <div class="card dark">
+                <h2>Algunas palabras de mi parte</h2>
+                <p class="sub animate-delay-1">Trate de resumir lo más que pude 🤣</p>
+
+                <div class="song-player animate-delay-2">
+                    <div class="song-info">
+                        <h4>Mi querido amigo Kenet, a veces Konfleys y otras Kortiz</h4>
+                        <p>
+                            Se que no soy mucho de palabras, pero quería decirte que eres
+                            una gran persona, me has ayudado mucho solamente con palabras
+                            y haz sabido escucharme en mis peores momentos, me haz impulsado
+                            a ser mejor y a salir de mi zona de confort.
+                            Es porque eres una persona que no le tiene miedo a lo desconocido,
+                            siempre se tira a cualquier cosa para salir adelante y no quedarse
+                            estancado en algún lado, ese lado tuyo es el que más admiro y lo que me ha
+                            impulsado a cambiar mi forma de ser.
+                            También tenes tus defectos vea pero eso no quita
+                            lo buena onda que eres. Espero que hayas pasado un feliz cumpleaños, y que sigamos
+                            compartiendo muchos momentos más como en este año que paso. Con esto termino
+                            y sigue así chele no cambies 🤜🤛. (Ahí me haces accionista de la empresa que queres crear 🤣)
+                        </p>
+                    </div>
+                </div>
+                <div class="progress-bar animate-delay-3">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats">
+            <div class="card light">
+                <h3 class="brand">Algún día quisiera devolverte los miles de favores que me haz hecho</h3>
+                <div class="plant-icon animate-delay-1">😂</div>
+                <h2 class="main-title animate-delay-1" style="font-size: 2rem;">ASÍ QUE ESPEREMOS QUE EL PRÓXIMO AÑO SIGAMOS MEJORANDO JUNTOS</h2>
+                <span class="stat-number animate-delay-2">#DEV #MINECRAFT #VIBECODING #IA</span>
+
+                <div class="bottom-bar">
+                </div>
+            </div>
+        </section>
+
+        <section id="outro">
+            <div class="confetti-container">
+                <div class="confetti c1"></div>
+                <div class="confetti c2"></div>
+                <div class="confetti c3"></div>
+                <div class="confetti c4"></div>
+                <div class="confetti c5"></div>
+            </div>
+            <div class="card dark" style="border-color: var(--accent-green);">
+                <div class="heart-icon animate-delay-1"
+                    style="font-size: 4rem; color: var(--accent-green); margin-bottom: 20px;">🎂</div>
+                <h1 class="animate-delay-1" style="font-size: 3.5rem; line-height: 1; margin: 0;">¡FELIZ<br>CUMPLEAÑOS!
+                </h1>
+                <p class="sub animate-delay-2" style="margin-top: 20px; font-size: 1.3rem;">Aca termina chavo, ya no hay más :v</p>
+            </div>
+        </section>
+
+    </main>
+    <!-- Navigation buttons -->
+    <div class="nav-controls">
+        <button id="prev-btn" aria-label="Anterior" class="nav-btn">‹</button>
+        <button id="next-btn" aria-label="Siguiente" class="nav-btn">›</button>
+    </div>
+
+    <script src="main.js" defer></script>
+
+</body>
+
+</html>
